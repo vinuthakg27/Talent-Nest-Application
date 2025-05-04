@@ -1,0 +1,145 @@
+body {
+  background-color: black;
+  font-family: 'Segoe UI', sans-serif;
+  color: #e0e0e0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-wrapper {
+  width: 100%;
+  max-width: 320px;
+  padding: 10px;
+}
+
+.login-card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+}
+
+.logo {
+  width: 45px;
+  margin-bottom: 8px;
+}
+
+h1 {
+  color: #00ffff;
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+h3 {
+  color: #ce9178;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+p {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+a {
+  color: #00aaff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.login-buttons {
+  margin-bottom: 10px;
+}
+
+.login-buttons button {
+  background-color: #0088cc;
+  border: none;
+  padding: 6px 10px;
+  margin: 3px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  box-shadow: 0 0 6px #00ffff40;
+}
+
+.login-buttons button:hover {
+  background-color: #00aaff;
+  box-shadow: 0 0 10px #00ffff80;
+}
+
+.trusted-section {
+  margin: 12px 0;
+}
+
+.trusted-section h3 {
+  color: #c586c0;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+}
+
+.companies span {
+  background: #292929;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 10px;
+  color: #9cdcfe;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.stat .number {
+  font-size: 1em;
+  color: #4ec9b0;
+  font-weight: bold;
+}
+
+.stat .label {
+  font-size: 0.75em;
+  color: #aaa;
+}
+
+.start-career {
+  margin-top: 12px;
+  background: #1f1f1f;
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid #333;
+}
+
+.start-career h4 {
+  color: #dcdcaa;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.start-career button {
+  background-color: #0e639c;
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 6px #00ffff30;
+  transition: 0.3s ease;
+}
+
+.start-career button:hover {
+  background-color: #1177bb;
+  box-shadow: 0 0 10px #00ffff80;
+}

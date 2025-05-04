@@ -1,0 +1,58 @@
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background-color: #0066ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+.report-box {
+  background-color: #222;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #000;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th, table td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: #333;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}

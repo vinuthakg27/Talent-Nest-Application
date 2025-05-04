@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TalentNest Reports</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/report.css') }}">
+</head>
+<body>
+  <div class="header">
+    <h1>TalentNest Reports</h1>
+    <button onclick="window.location.href='/'">Logout</button>
+  </div>
+
+  <h2 class="subtitle">Reports</h2>
+  <div class="report-box">
+    <h2>Job Application Report</h2>
+    <table id="report-table">
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>College</th>
+          <th>Job Role</th>
+          <th>Company</th>
+          <th>Package</th>
+          <th>Application Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data will be inserted here by JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <div class="button-container">
+    <button onclick="history.back()">Back</button>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/report.js') }}"></script>
+</body>
+</html>

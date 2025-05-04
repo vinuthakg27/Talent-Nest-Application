@@ -1,0 +1,75 @@
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Header with title and logout button aligned */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Title styling */
+.header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+/* Logout button */
+button {
+  background-color: #0066ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #0052cc;
+}
+
+/* Subtitle below the header */
+.subtitle {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+/* Container for report table */
+.report-box {
+  background-color: #222;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #000;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th, table td {
+  border: 1px solid #444;
+  padding: 12px;
+  text-align: left;
+}
+
+thead {
+  background-color: #333;
+}
+
+/* Back button container */
+.button-container {
+  text-align: left;
+  margin-top: 20px;
+}
