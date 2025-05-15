@@ -1,14 +1,30 @@
 import sqlite3
 def get_jobs_by_application_status(usn):
-    conn1 = sqlite3.connect('db/hireme.db')
-    cursor1 = conn1.cursor()
-    cursor1.execute(''' SELECT jobs.*, CASE WHEN student_applications.job_id IS NOT NULL THEN 'applied' ELSE 'not applied' END AS status FROM jobs LEFT JOIN student_applications ON jobs.id = student_applications.job_id AND student_applications.usn = ?''', (usn,))
-    jobs = cursor1.fetchall()
-    conn1.close()
-    categorized_jobs = {  
-        "not_applied": [dict(id=job[0], job_role=job[1], company=job[2], package=job[3], job_description=job[4]) for job in jobs if job[-1] == 'not applied'],  
-        "applied": [dict(id=job[0], job_role=job[1], company=job[2], package=job[3], job_description=job[4]) for job in jobs if job[-1] == 'applied']}  
-    return categorized_jobs 
+    conn = sqlite3.connect('db/hireme.db')
+    cursor = conn.cursor()
+    
+    # Get applied job IDs
+    cursor.execute("SELECT job_id FROM student_applications WHERE usn = ?", (usn,))
+    applied_ids = {row[0] for row in cursor.fetchall()}
+
+    # Get all jobs
+    cursor.execute("SELECT * FROM jobs")
+    jobs = cursor.fetchall()
+    
+    conn.close()
+    
+    # Categorize manually in Python
+    applied = []
+    not_applied = []
+    for job in jobs:
+        job_dict = dict(id=job[0], job_role=job[1], company=job[2], package=job[3], job_description=job[4])
+        if job[0] in applied_ids:
+            applied.append(job_dict)
+        else:
+            not_applied.append(job_dict)
+
+    return {"applied": applied, "not_applied": not_applied}
+
 def apply_job(usn, job_id):
     conn2 = sqlite3.connect('db/hireme.db')
     cursor2 = conn2.cursor()

@@ -9,6 +9,6 @@ def check_recruiter_login(username, password):
     if recruiter:
         return jsonify({'redirected': True, 'url': '/recruiter_home'})
     else:
-        return jsonify({'redirected': False}) 
+        return jsonify({'redirected': False, 'message':'register first'}) 
         
     
