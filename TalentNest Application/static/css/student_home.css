@@ -1,8 +1,8 @@
 /* General layout */
 body {
-    background-color: #121212;
-    color: #ffffff;
-    font-family: 'Segoe UI', sans-serif;
+    background-color:black;
+    color: white;
+    font-family: sans-serif;
     font-size: 20px;
     margin: 0;
     padding: 0;
@@ -10,40 +10,33 @@ body {
   
   /* Header section */
   header {
-    background-color: #1e1e1e;
+    background-color: black;
     padding: 25px 35px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);
   }
   
   .header-container {
     display: flex;
-    justify-content: space-between;
     width: 100%;
     align-items: center;
   }
   
   .header-container h1 {
     font-size: 32px;
-    color: #00ffff;
+    color: lightseagreen;
     margin: 0;
   }
   
   #logout-btn {
-    background-color: #007bff;
+    background-color: blue;
     color: white;
     font-size: 20px;
     padding: 12px 28px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  #logout-btn:hover {
-    background-color: #0056b3;
   }
   
   /* Main content */
@@ -59,60 +52,6 @@ body {
   /* Section headers */
   .job-list h3 {
     font-size: 26px;
-    color: #00aaff;
+    color: blue;
     margin-bottom: 20px;
   }
-  
-  /* Job cards */
-  .job-card {
-    background-color: #1f1f1f;
-    padding: 24px;
-    margin-bottom: 25px;
-    border-radius: 12px;
-    box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .job-card div {
-    margin: 6px 0;
-  }
-  
-  /* Job info block */
-  .job-info {
-    max-width: 70%;
-    font-size: 20px;
-  }
-  
-  .job-info strong {
-    display: inline-block;
-    width: 140px;
-    font-size: 20px;
-  }
-  
-  /* Buttons: Apply/View */
-  .job-buttons {
-    display: flex;
-    gap: 18px;
-    margin-top: 14px;
-  }
-  
-  .job-buttons button {
-    background-color: #00aaff;
-    color: white;
-    border: none;
-    padding: 14px 28px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  .job-buttons button:hover {
-    background-color: #0088cc;
-    transform: scale(1.05);
-  }
-  

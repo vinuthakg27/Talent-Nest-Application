@@ -1,22 +1,20 @@
 body {
-  background-color: #111;
-  color: #fff;
-  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
   margin: 0;
   padding: 20px;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 button {
-  background-color: #0066ff;
+  background-color: blue;
   color: white;
   padding: 10px 20px;
-  border: none;
   font-size: 16px;
   cursor: pointer;
   border-radius: 8px;
@@ -29,27 +27,26 @@ button {
 }
 
 .report-box {
-  background-color: #222;
+  background-color: black;
   padding: 20px;
   margin-top: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px black;
 }
 
 table {
   width: 100%;
-  border-collapse: collapse;
   margin-top: 10px;
 }
 
 table th, table td {
-  border: 1px solid #444;
+  border: 1px solid black;
   padding: 10px;
   text-align: left;
 }
 
 thead {
-  background-color: #333;
+  background-color: black;
 }
 
 .button-container {

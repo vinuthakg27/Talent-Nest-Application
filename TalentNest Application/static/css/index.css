@@ -1,7 +1,7 @@
 body {
   background-color: black;
-  font-family: 'Segoe UI', sans-serif;
-  color: #e0e0e0;
+  font-family: sans-serif;
+  color: white;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,26 +17,21 @@ body {
 }
 
 .login-card {
-  background: #1a1a1a;
+  background: black;
   border-radius: 16px;
   padding: 32px;
   text-align: center;
   box-shadow: 0 0 24px rgba(0, 255, 255, 0.12);
 }
 
-.logo {
-  width: 60px;
-  margin-bottom: 16px;
-}
-
 h1 {
-  color: #00ffff;
+  color: skyblue;
   margin-bottom: 12px;
   font-size: 22px;
 }
 
 h3 {
-  color: #ce9178;
+  color: orange;
   margin-bottom: 8px;
   font-size: 16px;
 }
@@ -47,74 +42,25 @@ p {
 }
 
 a {
-  color: #00aaff;
-  text-decoration: none;
+  color: skyblue;
   font-size: 14px;
 }
 
 .login-buttons {
   margin-bottom: 18px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
 }
 
 .login-buttons button {
-  background-color: #0088cc;
+  background-color: skyblue;
   border: none;
   padding: 10px 18px;
   color: white;
   border-radius: 6px;
   cursor: pointer;
   font-size: 14px;
-  box-shadow: 0 0 6px #00ffff40;
+  box-shadow: 0 0 6px lightseagreen;
   transition: 0.3s ease;
-}
-
-.login-buttons button:hover {
-  background-color: #00aaff;
-  box-shadow: 0 0 10px #00ffff80;
-}
-
-.trusted-section {
-  margin: 24px 0;
-}
-
-.trusted-section h3 {
-  color: #c586c0;
-  font-size: 15px;
-  margin-bottom: 10px;
-}
-
-.companies {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  justify-content: center;
-}
-
-.companies span {
-  background: #292929;
-  padding: 6px 10px;
-  border-radius: 4px;
-  font-size: 11px;
-  color: #9cdcfe;
-}
-
-.stats-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
-}
-
-.stat .number {
-  font-size: 1.2em;
-  color: #4ec9b0;
-  font-weight: bold;
-}
-
-.stat .label {
-  font-size: 0.8em;
-  color: #aaa;
 }
