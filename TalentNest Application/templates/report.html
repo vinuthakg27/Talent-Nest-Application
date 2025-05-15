@@ -9,7 +9,7 @@
 <body>
   <div class="header">
     <h1>TalentNest Reports</h1>
-    <button onclick="window.location.href='/'">Logout</button>
+    <button type="submit"><a href='{{url_for("/")}}'></a>Logout</button>
   </div>
 
   <h2 class="subtitle">Reports</h2>
@@ -33,7 +33,7 @@
   </div>
 
   <div class="button-container">
-    <button onclick="history.back()">Back</button>
+    <button  type="button" ><a href="{{ url_for('recruiter_home') }}">Back</a></button>
   </div>
 
   <script src="{{ url_for('static', filename='js/report.js') }}"></script>

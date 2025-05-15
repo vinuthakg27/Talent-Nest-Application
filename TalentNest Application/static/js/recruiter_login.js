@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
          console.error('Error:', error);
       })}) 
       signupButton.addEventListener('click', function(event) {  
-       console.log('it is clicked');
       event.preventDefault();
       window.location.href = '/recruiter_register';
     }) 
